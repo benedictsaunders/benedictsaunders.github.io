@@ -1,0 +1,15 @@
+.hero {
+    height: 100%;
+    width: 100%;
+}
+
+.center {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+.name {
+    color: #C6C6C6;
+    font-family: sans-serif;
+}
