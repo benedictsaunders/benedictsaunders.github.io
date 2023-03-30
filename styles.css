@@ -1,5 +1,6 @@
 .name {
     font-size: 36pt;
+    margin: auto;
     text-align: center;
     vertical-align: middle;
     font-family: 'Quicksand', sans-serif;
@@ -10,13 +11,86 @@
     /* background-image: url(assets/img/bg.); */
 }
 
-.center {
+#landing-content {
     margin: auto;
-    width: 50%;
-    padding: 10px;
-    vertical-align: middle;
-    position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+.name-container {
+    padding: 10px;
+    vertical-align: middle;
+    border: 4px solid #DDD;
+
+}
+
+.landing-links {
+    width: 100%;
+    position: absolute;
+    padding: 10px;
+    padding-left: 15%;
+    padding-right: 15%;
+    text-align: center;
+}
+
+.landing-links a {
+    margin: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    position: relative;
+    color: rgba(210, 210, 210, 0.7);
+    border: solid #DDD 2px;
+    border-radius: 99px;
+    padding: 8px;
+    transition: linear 0.2s;
+    display: inline-block;
+}
+
+.landing-links a:hover {
+    background: #DDD;
+    border-radius: 99px;
+    padding: 8px;
+}
+
+.twitter:hover {
+    color: #1DA1F2
+}
+
+.linkedin:hover {
+    color: #0077B5
+}
+
+.github:hover {
+    color: #000
+}
+
+#landing-bottom a .icon-white {
+    color: rgba(210, 210, 210, 0.7);
+}
+
+#landing-bottom {
+    width: 100%;
+    height: 7%;
+    min-height: 10px;
+    bottom: 0;
+    position: absolute;
+}
+
+#landing-bottom a {
+    color: rgba(210, 210, 210, 0.7);
+    border: solid #DDD 1px;
+    border-radius: 99px;
+    padding: 8px;
+    transition: linear 0.2s;
+    display: table;
+    margin: 0 auto;
+}
+
+#landing-bottom a:hover {
+    color: rgba(56, 56, 56, 0.7);
+    background: #DDD !important;
+    border-radius: 99px;
+    padding: 8px;
 }
