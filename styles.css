@@ -7,7 +7,7 @@
 }
 
 .fullvh {
-    height: 100vh;
+    min-height: 100vh;
     /* background-image: url(assets/img/bg.); */
 }
 
@@ -91,6 +91,35 @@
 #landing-bottom a:hover {
     color: rgba(56, 56, 56, 0.7);
     background: #DDD !important;
+    border-radius: 99px;
+    padding: 8px;
+}
+
+section.section {
+    position:relative
+}
+
+.section-bottom {
+    width: 100%;
+    height: 7%;
+    min-height: 10px;
+    bottom: 0;
+    position: absolute;
+}
+
+.section-bottom a {
+    color: rgba(56, 56, 56, 0.7);
+    border: solid #555 1px;
+    border-radius: 99px;
+    padding: 8px;
+    transition: linear 0.2s;
+    display: table;
+    margin: 0 auto;
+}
+
+.section-bottom a:hover {
+    color: rgba(210, 210, 210, 0.7);
+    background: #555 !important;
     border-radius: 99px;
     padding: 8px;
 }
