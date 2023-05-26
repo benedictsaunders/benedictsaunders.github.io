@@ -17,6 +17,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     position: absolute;
+    backdrop-filter: blur(20px);
 }
 
 .name-container {
@@ -52,6 +53,10 @@
     background: #DDD;
     border-radius: 99px;
     padding: 8px;
+}
+
+.google-scholat:hover {
+    color: #1DA1F2
 }
 
 .twitter:hover {
