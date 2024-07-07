@@ -71,6 +71,10 @@
     color: #000
 }
 
+.link:hover {
+    color: #666
+}
+
 #landing-bottom a .icon-white {
     color: rgba(210, 210, 210, 0.7);
 }
