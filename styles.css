@@ -68,11 +68,17 @@
 }
 
 .github:hover {
-    color: #000
+    color: #000;
+    text-decoration: none;
+}
+
+.link {
+    color: #333;
 }
 
 .link:hover {
-    color: #666
+    color: #666;
+    text-decoration: none;
 }
 
 #landing-bottom a .icon-white {
