@@ -266,7 +266,7 @@ scholar:
   last_name: [Saunders]
   first_name: [Benedict]
 
-  style: rsc
+  style: acs
   locale: en
 
   source: /_bibliography/
