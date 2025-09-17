@@ -12,7 +12,7 @@ profile:
     <p>This is not a picture of me.</p>
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
-social: True # includes social icons at the bottom of the page
+social: False # includes social icons at the bottom of the page
 
 announcements:
   enabled: False # includes a list of news items
