@@ -11,3 +11,5 @@ assets/libs/
 node_modules/
 vendor
 .idea
+_config.dev.yml
+# .old_site_academic

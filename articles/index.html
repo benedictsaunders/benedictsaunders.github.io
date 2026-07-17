@@ -1,0 +1,39 @@
+---
+layout: default
+title: Blog Archive
+permalink: /articles/
+---
+
+<main>
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <!-- <span class="section-number"></span> -->
+                    <span class="section-name">Blog Archive</span>
+                </h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="archive-list">
+                {% for post in site.posts %}
+                <article class="archive-card">
+                    <a href="{{ post.url | relative_url }}" class="archive-card-link">
+                        <div class="archive-card-main">
+                            <div class="archive-meta">
+                                <span class="archive-meta-text">{{ post.date | date: "%d-%m-%Y" }}&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;[ {% assign words = post.content | strip_html | number_of_words %}{% assign read_time = words | divided_by: 240 | plus: 1 %}{{ read_time }} min read ]</span>
+                            </div>
+                            <h3 class="archive-title">{{ post.title }}</h3>
+                            <p class="archive-excerpt">{{ post.excerpt | strip_html }}</p>
+                        </div>
+                        <div class="archive-card-tags">
+                            {% for tag in post.tags limit:2 %}
+                            <span class="tag">{{ tag }}</span>
+                            {% endfor %}
+                        </div>
+                    </a>
+                </article>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+</main>

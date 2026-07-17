@@ -1,0 +1,22 @@
+/* ========================================
+   LaTeX logo formatting
+   ======================================== */
+
+.latex {
+  font-family: "Computer Modern", serif; /* Standard LaTeX font */
+}
+
+.latex .latex-a {
+  text-transform: uppercase;
+  font-size: 0.75em;
+  vertical-align: 0.28em;
+  margin-left: -0.36em;
+  margin-right: -0.15em;
+}
+
+.latex .latex-e {
+  text-transform: uppercase;
+  vertical-align: -0.25em;
+  margin-left: -0.166em;
+  margin-right: -0.125em;
+}

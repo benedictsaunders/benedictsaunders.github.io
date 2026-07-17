@@ -1,0 +1,31 @@
+Languages:
+  - Python
+  - C++
+  - SQL
+  - HTML/CSS
+  - '<span class="latex">L<span class="latex-a">a</span>T<span class="latex-e">e</span>X</span>'
+Data & Machine Learning:
+  - PyTorch
+  - Pandas
+  - ScikitLearn
+  - Numpy
+  - Scipy
+  - Matplotlib
+  - Bokeh
+Tools & Environments:
+  - Git
+  - uv
+  - Conda
+  - Linux
+  - CMake
+  - Docker
+  - Multiprocessing
+  - MPI
+  - Jupyter
+  - HPC Clusters  
+AI & Agentic workflow:
+  - llama.cpp
+  - HuggingFace
+  - Claude Code
+  - OpenCode
+  - Crush
