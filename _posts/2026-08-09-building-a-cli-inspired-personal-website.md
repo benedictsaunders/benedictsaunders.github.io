@@ -7,8 +7,10 @@ categories:
   - AI
 tags:
   - Projects
+  - RAGStream
   - Python
   - LLM
+  - RAG
 excerpt: "Yes, it's another RAG pipeline to add to the ever-growing mountain of AI tooling."
 ---
 
