@@ -1,14 +1,4 @@
-- title: Project Alpha
-  url: https://github.com/username/alpha
-  description: Description of the first project.
-  tags: [JavaScript, React, Node.js]
-
-- title: Project Beta
-  url: https://github.com/username/beta
-  description: Description of the second project.
-  tags: [Python, Django, PostgreSQL]
-
-- title: Project Gamma
-  url: https://github.com/username/gamma
-  description: Description of the third project.
-  tags: [Go, Kubernetes, Docker]
+- title: RAGStream
+  url: https://github.com/benedictsaunders/ragstream
+  description: A simple proof-of-concept RAG pipeline to outline to the state-of-the-art for bleeding-edge scientific research.
+  tags: [Python, langchain, LLM]

@@ -99,6 +99,7 @@ html.dark .archive-card,
 html.dark .project-card,
 html.dark .skill-category {
     background-color: var(--color-dark);
+    border-color: var(--color-gray-700);
 }
 
 html.dark .project-card:hover,
@@ -113,13 +114,6 @@ html.dark .research-type,
 html.dark .tag,
 html.dark .skill-tag {
     background-color: var(--color-gray-900);
-    border-color: var(--color-gray-700);
-}
-
-html.dark .article-card,
-html.dark .post-card,
-html.dark .archive-card,
-html.dark .article-card-more {
     border-color: var(--color-gray-700);
 }
 
@@ -662,8 +656,6 @@ html.dark .theme-switch-thumb .icon-moon {
     flex-direction: column;
     gap: var(--space-md);
     padding: var(--space-lg);
-    border: var(--border-width) solid var(--color-border);
-    background-color: var(--color-white);
 }
 
 .meta-block {
@@ -697,14 +689,11 @@ html.dark .theme-switch-thumb .icon-moon {
 
 .research-card {
     padding: var(--space-lg);
-    border: var(--border-width) solid var(--color-border);
-    background-color: var(--color-white);
     transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .research-card:hover {
     transform: translateY(-2px);
-    box-shadow: 4px 4px 0 var(--color-black);
 }
 
 .research-meta {
@@ -749,6 +738,29 @@ html.dark .theme-switch-thumb .icon-moon {
 }
 
 /* ========================================
+   Shared Card Surface Styles
+   ======================================== */
+
+.about-meta,
+.research-card,
+.article-card,
+.post-card,
+.archive-card,
+.project-card,
+.skill-category {
+    border: var(--border-width) solid var(--color-border);
+    background-color: var(--color-white);
+    color: var(--color-text);
+}
+
+.article-card:hover,
+.archive-card:hover,
+.project-card:hover,
+.research-card:hover {
+    box-shadow: 4px 4px 0 var(--color-black);
+}
+
+/* ========================================
    Ramblings Section
    ======================================== */
 
@@ -760,14 +772,6 @@ html.dark .theme-switch-thumb .icon-moon {
 
 .article-card {
     padding: var(--space-lg);
-    border: var(--border-width) solid var(--color-border);
-    background-color: var(--color-white);
-    color: var(--color-text);
-    /* transition: box-shadow 0.2s; */
-}
-
-.article-card:hover {
-    box-shadow: 4px 4px 0 var(--color-black);
 }
 
 .article-meta {
@@ -868,12 +872,6 @@ html.dark .theme-switch-thumb .icon-moon {
     max-width: 900px;
 }
 
-.post-card,
-.archive-card {
-    border: var(--border-width) solid var(--color-border);
-    background-color: var(--color-white);
-}
-
 .post-card {
     padding: var(--space-2xl);
 }
@@ -928,13 +926,18 @@ html.dark .theme-switch-thumb .icon-moon {
 .post-content h2,
 .post-content h3 {
     margin: 2rem 0 1rem;
-    font-family: var(--font-mono);
+    /* font-family: var(--font-mono); */
 }
 
 .post-content p,
 .post-content ul,
 .post-content ol {
     margin-bottom: 1rem;
+}
+
+.post-content ul {
+    padding-left: 2em;
+    list-style-position: outside;
 }
 
 .post-content a {
@@ -967,10 +970,6 @@ html.dark .theme-switch-thumb .icon-moon {
     align-items: center;
     gap: var(--space-lg);
     padding: var(--space-lg);
-}
-
-.archive-card:hover {
-    box-shadow: 4px 4px 0 var(--color-black);
 }
 
 .archive-card-main {
@@ -1032,19 +1031,11 @@ html.dark .theme-switch-thumb .icon-moon {
 
 .project-card {
     padding: var(--space-lg);
-    border: var(--border-width) solid var(--color-border);
-    background-color: var(--color-white);
     transition: transform 0.2s, box-shadow 0.2s;
-    /* position: relative; */
-    /* padding: 1.5rem; */
-    /* border: 1px solid #ccc;
-    border-radius: 8px; */
 }
-
 
 .project-card:hover {
     transform: translateY(-2px);
-    box-shadow: 4px 4px 0 var(--color-black);
 }
 
 .project-card-link {
@@ -1167,8 +1158,6 @@ html.dark .theme-switch-thumb .icon-moon {
 
 .skill-category {
     padding: var(--space-lg);
-    border: var(--border-width) solid var(--color-border);
-    background-color: var(--color-white);
 }
 
 .skill-category-title {

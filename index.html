@@ -22,7 +22,7 @@ title: Home
                             <span class="terminal-dot"></span>
                         </div>
                         <div class="terminal-body">
-                            <h1 class="hero-name">Benedict Saunders</h1>
+                            <h1 class="hero-name">Benedict Saunders, PhD</h1>
                             <br>
                             <p class="hero-tagline">Data Science, Analysis & Engineering</p>
                             <p class="hero-tagline">Computational Research & Discovery</p>
@@ -86,26 +86,6 @@ title: Home
         </div>
     </section>
 
-    <!-- Experience Section -->
-     <!-- <section class="section" id="experience">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">
-                    <span class="section-number"></span>
-                    <span class="section-name">Experience</span>
-                </h2>
-                <div class="section-line"></div>
-            </div>
-            <div">
-                {% for exp in site.data.experience %}
-                <p> {{ exp.title }}</p>
-                <p> {{ exp.start }} - {{ exp.end }}</p>
-                <p>{{ exp.company }} - {{ exp.location }}</p>
-                {% endfor %}
-            </div>
-        </div>
-    </section> -->
-
     <!-- Projects Section -->
     <section class="section " id="projects">
         <div class="container">
@@ -117,7 +97,7 @@ title: Home
                 <div class="section-line"></div>
             </div>
             <div class="projects-grid">
-                {% for project in site.data.projects limit:3 %}
+                {% for project in site.data.projects limit:1 %}
                 <article class="project-card">
                     <div class="project-header">
                         <span class="project-index">[0{{ forloop.index0 }}]</span>
@@ -134,7 +114,7 @@ title: Home
                 </article>
                 {% endfor %}
                 <article class="project-card project-card-more">
-                    <a href="https://github.com/yourusername" class="project-more-link">
+                    <a href="https://github.com/benedictsaunders" class="project-more-link">
                         <span>All Repositories</span>
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <line x1="5" y1="12" x2="19" y2="12"/>
