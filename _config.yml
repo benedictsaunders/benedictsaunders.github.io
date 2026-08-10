@@ -2,7 +2,7 @@ title: My Static Site
 description: A Jekyll site with a single-page structure and blog.
 # _config.yml
 url: "https://benedictsaunders.github.io"
-baseurl: "/benedictsaunders.github.io"
+# baseurl: ""
 
 # Force posts to render at /articles/title.html
 permalink: /articles/:title.html
