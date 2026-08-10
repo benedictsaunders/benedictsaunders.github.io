@@ -204,6 +204,11 @@ html.dark .project-card-more:hover {
 
 }
 
+html.dark .contact-badge {
+    background-color: var(--color-dark);
+    color: var(--color-offwhite);
+}
+
 /* Reset */
 *, *::before, *::after {
     box-sizing: border-box;
@@ -1340,6 +1345,18 @@ html.dark .theme-switch-thumb .icon-moon {
 
 .footer-time {
     font-variant-numeric: tabular-nums;
+}
+
+.contact-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-sm);
+    font-family: var(--font-mono);
+    font-size: 0.875rem;
+    padding: var(--space-sm) var(--space-md);
+    border: var(--border-width) solid var(--color-border);
+    background-color: var(--color-white);
+    color: var(--color-black);
 }
 
 /* ========================================
