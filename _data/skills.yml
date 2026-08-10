@@ -25,6 +25,7 @@ Tools & Environments:
   - HPC Clusters  
 AI & Agentic workflow:
   - llama.cpp
+  - Langchain
   - HuggingFace
   - Claude Code
   - OpenCode

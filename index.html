@@ -114,13 +114,13 @@ title: Home
                 </article>
                 {% endfor %}
                 <article class="project-card project-card-more">
-                    <a href="https://github.com/benedictsaunders" class="project-more-link">
+                    <a href="https://github.com/benedictsaunders?tab=repositories" class="project-more-link">
                         <span>All Repositories</span>
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <line x1="5" y1="12" x2="19" y2="12"/>
                             <polyline points="12 5 19 12 12 19"/>
                         </svg>
-                    </a>
+                    </a>    
                 </article>
             </div>
         </div>
@@ -162,47 +162,43 @@ title: Home
                 </h2>
                 <div class="section-line"></div>
             </div>
+
+            {% assign papers = site.data.papers | where: "selected", true | sort: "year" | reverse %}
+
+            {% if papers and papers.size > 0 %}
             <div class="research-grid">
+                {% for paper in papers %}
                 <article class="research-card">
                     <div class="research-meta">
-                        <span class="research-year">2024</span>
-                        <span class="research-type">Paper</span>
+                        <span class="research-year">{{ paper.year }}</span>
+                        <span class="research-type">{{ paper.type }}</span>
                     </div>
-                    <h3 class="research-title">Research Paper Title</h3>
-                    <p class="research-authors">Saunders, B. et al.</p>
-                    <p class="research-venue">Conference/Journal Name</p>
+                    <h3 class="research-title">{{ paper.title }}</h3>
+                    <p class="research-authors">{{ paper.authors }}</p>
+                    <p class="research-venue">{{ paper.venue }}</p>
                     <div class="research-links">
-                        <a href="#" class="btn btn-small">[PDF]</a>
-                        <a href="#" class="btn btn-small">[Code]</a>
-                        <a href="#" class="btn btn-small">[DOI]</a>
+                        {% for link in paper.links %}
+                        <a href="{{ link.url }}" class="btn btn-small">{{ link.label }}</a>
+                        {% endfor %}
                     </div>
                 </article>
-                <article class="research-card">
-                    <div class="research-meta">
-                        <span class="research-year">2023</span>
-                        <span class="research-type">Thesis</span>
-                    </div>
-                    <h3 class="research-title">Another Research Work</h3>
-                    <p class="research-authors">Saunders, B.</p>
-                    <p class="research-venue">University/Institution</p>
-                    <div class="research-links">
-                        <a href="#" class="btn btn-small">[PDF]</a>
-                        <a href="#" class="btn btn-small">[Abstract]</a>
-                    </div>
-                </article>
-                <article class="research-card">
-                    <div class="research-meta">
-                        <span class="research-year">2023</span>
-                        <span class="research-type">Preprint</span>
-                    </div>
-                    <h3 class="research-title">Work in Progress</h3>
-                    <p class="research-authors">Saunders, B. et al.</p>
-                    <p class="research-venue">arXiv</p>
-                    <div class="research-links">
-                        <a href="#" class="btn btn-small">[arXiv]</a>
-                    </div>
-                </article>
+                {% endfor %}
             </div>
+            <div class="research-footer">
+                <a href="https://scholar.google.com/citations?user=MGYR_qAAAAAJ"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="research-more-link">
+                    <span>View all publications on Google Scholar</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="5" y1="12" x2="19" y2="12"/>
+                        <polyline points="12 5 19 12 12 19"/>
+                    </svg>
+                </a>
+            </div>
+            {% else %}
+            <p>No selected papers yet. Add items to `_data/papers.yml` with `selected: true`.</p>
+            {% endif %}
         </div>
     </section>
 

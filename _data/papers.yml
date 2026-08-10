@@ -1,0 +1,29 @@
+- title: "Comprehensive structure exploration and thermodynamics of heteroatom doped graphene superstructures"
+  authors: "Saunders, B. et al."
+  venue: "ArXiv, Under review"
+  year: 2025
+  type: "Paper"
+  selected: true
+  links:
+    - label: "URL"
+      url: "https://arxiv.org/abs/2509.08352v1"
+    - label: "PDF"
+      url: "https://arxiv.org/pdf/2509.08352"
+
+- title: "The potential scarcity, or not, of polymeric overall water splitting photocatalysts"
+  authors: "Saunders, B. et al."
+  venue: RSC Sustainable Energy & Fuels
+  year: 2022
+  type: "Paper"
+  selected: true
+  links:
+    - label: "URL"
+      url: "https://pubs.rsc.org/se/article/6/9/2233/787558/The-potential-scarcity-or-not-of-polymeric-overall"
+    - label: "DOI"
+      url: " https://doi.org/10.1039/d2se00027j"
+
+- title: "Predicting the Structure and Stability of Compositionally Diverse Materials"
+  authors: "Saunders, B."
+  year: 2025
+  type: "Thesis"
+  selected: true

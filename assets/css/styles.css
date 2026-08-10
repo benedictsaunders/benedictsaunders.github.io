@@ -143,6 +143,14 @@ html.dark .article-card-more:hover {
     background-color: var(--color-dark);
 }
 
+html.dark .research-more-link {
+    background-color: var(--color-gray-900);
+}
+
+html.dark .research-more-link:hover {
+    background-color: var(--color-dark);
+}
+
 html.dark .skill-tag:hover {
     background-color: var(--color-offwhite);
     color: var(--color-black);
@@ -685,6 +693,7 @@ html.dark .theme-switch-thumb .icon-moon {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     gap: var(--space-lg);
+    margin-bottom: var(--space-xl);
 }
 
 .research-card {
@@ -735,6 +744,34 @@ html.dark .theme-switch-thumb .icon-moon {
     display: flex;
     gap: var(--space-sm);
     flex-wrap: wrap;
+}
+
+.research-footer {
+    margin-top: var(--space3xl);
+    display: flex;
+    justify-content: center;
+}
+
+.research-footer .research-more-link {
+    display: flex;
+    align-items: center;
+    min-width: 290px;
+    font-family: var(--font-mono);
+    font-size: 0.875rem;
+    color: var(--color-text-muted);
+    text-decoration: none;
+    transition: color 0.2s;
+    justify-content: center;
+    padding: var(--space-sm) var(--space-md);
+    background-color: var(--color-cream);
+    border-style: dashed;
+    border-width: 1px;
+}
+
+.research-footer .research-more-link:hover {
+    box-shadow: none;
+    background-color: var(--color-white);
+    color: var(--color-text);
 }
 
 /* ========================================
