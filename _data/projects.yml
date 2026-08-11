@@ -1,4 +1,4 @@
 - title: RAGStream
   url: https://github.com/benedictsaunders/ragstream
-  description: A simple proof-of-concept RAG pipeline to outline to the state-of-the-art for bleeding-edge scientific research.
+  description: A simple proof-of-concept RAG pipeline to determine and summarise the state-of-the-art and bleeding-edge of scientific research in a given field.
   tags: [Python, langchain, LLM]
