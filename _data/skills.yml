@@ -22,7 +22,8 @@ Tools & Environments:
   - Multiprocessing
   - MPI
   - Jupyter
-  - HPC Clusters  
+  - GPU Computing
+  - HPC Clusters
 AI & Agentic workflow:
   - llama.cpp
   - Langchain
