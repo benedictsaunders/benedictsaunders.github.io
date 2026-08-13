@@ -2,3 +2,8 @@
   url: https://github.com/benedictsaunders/ragstream
   description: A simple proof-of-concept RAG pipeline to determine and summarise the state-of-the-art and bleeding-edge of scientific research in a given field.
   tags: [Python, langchain, LLM]
+
+- title: MolGNN
+  url: https://github.com/benedictsaunders/molgnn
+  description: Using Graph Neural Networks to predict properties of small organic molecules in the QM9 dataset.
+  tags: [Python, PyTorch, GNN]
