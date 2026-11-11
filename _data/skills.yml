@@ -1,6 +1,7 @@
 Languages:
   - Python
   - C++
+  - Bash
   - SQL
   - HTML/CSS
   - '<span class="latex">L<span class="latex-a">a</span>T<span class="latex-e">e</span>X</span>'
@@ -31,4 +32,7 @@ AI & Agentic workflow:
   - Claude Code
   - OpenCode
   - Crush
-  - mcp
+  - MCP
+  - RAG
+  - RLHF
+  - Fine-tuning
