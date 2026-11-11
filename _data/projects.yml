@@ -8,7 +8,7 @@
   description: Using Graph Neural Networks to predict properties of small organic molecules in the QM9 dataset.
   tags: [Python, PyTorch, GNN]
 
-  - title: Attache
+- title: Attache
   url: https://github.com/benedictsaunders/attache
   description: Re-training foundation models for geopolitical analysis from OSINT data.
   tags: [Python, LLM, RL, Fine-tuning, OSINT]
